@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentasi Pelaksanaan - Dayasosmas Kemensos</title>
+
+    <!-- Font dari Google Fonts (butuh internet) -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Semua pengaturan tampilan ada di file style.css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tampilan khusus halaman dokumentasi (boleh dipindah ke style.css) -->
+    <style>
+        .foto-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .foto-grid img {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== NAVBAR (menu di bagian atas) ===== -->
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo-kemensos.jpg" alt="Logo Kementerian Sosial" class="logo-icon">
+                <div class="logo-text">
+                    Pemberdayaan Sosial Masyarakat
+                    <small>Kementerian Sosial RI</small>
+                </div>
+            </a>
+            <ul class="menu">
+                <li><a href="sop1.html">SOP 1</a></li>
+                <li><a href="sop2.html">SOP 2</a></li>
+                <li><a href="sop3.html">SOP 3</a></li>
+                <li><a href="sop4.html">SOP 4</a></li>
+                <li><a href="dasar-hukum.html">Dasar Hukum</a></li>
+                <li><a href="dokumentasi.html" class="active">Dokumentasi Pelaksanaan</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ===== ISI HALAMAN ===== -->
+    <main>
+
+        <section class="hero hero-small">
+            <div class="container">
+                <p class="breadcrumb">Dokumentasi Pelaksanaan</p>
+                <h1>Dokumentasi pelaksanaan kegiatan</h1>
+                <p class="hero-text">Foto-foto kegiatan rapat dalam pelaksanaan program.</p>
+            </div>
+        </section>
+
+        <section class="container section">
+
+            <!-- Kegiatan 1 -->
+            <h2>Rapat 17 September 2023</h2>
+            <div class="foto-grid">
+                <img src="images/rapat-day-1.jpeg" alt="Dokumentasi rapat 17 September 2023 - foto 1">
+                <img src="images/rapat-day-1-v2.jpeg" alt="Dokumentasi rapat 17 September 2023 - foto 2">
+            </div>
+
+            <!-- Kegiatan 2 -->
+            <h2>Rapat 18 September 2023</h2>
+            <div class="foto-grid">
+                <img src="images/rapat-day-2.jpeg" alt="Dokumentasi rapat 18 September 2023 - foto 1">
+                <img src="images/rapat-day-2-v2.jpeg" alt="Dokumentasi rapat 18 September 2023 - foto 2">
+            </div>
+
+            <!-- Kegiatan 3 -->
+            <h2>Rapat 19 September 2023</h2>
+            <div class="foto-grid">
+                <img src="images/rapat-day-3.jpeg" alt="Dokumentasi rapat 19 September 2023 - foto 1">
+                <img src="images/rapat-day-3-v2.jpeg" alt="Dokumentasi rapat 19 September 2023 - foto 2">
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER (bagian paling bawah) ===== -->
+    <footer class="footer">
+        <div class="container">
+            <p><strong>Direktorat Pemberdayaan Sosial Masyarakat</strong><br>
+            Direktorat Jenderal Pemberdayaan Sosial, Kementerian Sosial Republik Indonesia</p>
+            <p>Disahkan oleh Direktur Pemberdayaan Sosial Masyarakat. Direktur Jenderal Pemberdayaan Sosial: Adrianus Alla.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,290 @@
+/* =====================================================
+   STYLE.CSS - pengaturan tampilan seluruh halaman
+   Bagian: 1 Dasar, 2 Navbar, 3 Hero, 4 Isi, 5 Tahapan,
+           6 Beranda, 7 Footer, 8 Tampilan HP
+   ===================================================== */
+
+/* ---------- 1. DASAR ---------- */
+* {
+    box-sizing: border-box;   /* lebar elemen sudah termasuk padding */
+}
+
+body {
+    margin: 0;
+    background-color: #f5f8f6;
+    color: #1c2a24;
+    font-family: "Source Sans 3", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    
+}
+
+
+
+h1, h2, h3 {
+    font-family: "Source Serif 4", Georgia, serif;
+    line-height: 1.2;
+    margin: 0;
+}
+
+h2 { font-size: 24px; margin-bottom: 18px; }
+
+a { color: #1d4e89; font-weight: 600; }
+
+ul { padding-left: 20px; margin: 0; }
+li { margin: 4px 0; }
+
+/* Pembungkus isi agar rata tengah dan tidak terlalu lebar */
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section { padding-top: 38px; padding-bottom: 38px; }
+.subheading { margin-top: 40px; }
+.section-text { color: #55655d; max-width: 46em; margin: 0 0 24px 0; }
+
+/* ---------- 2. NAVBAR ---------- */
+.navbar {
+    background-color: #0d3d28;
+    border-bottom: 4px solid #e8a90c;
+    position: sticky;         /* tetap menempel di atas saat scroll */
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.logo-icon {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.logo-text small {
+    display: block;
+    font-family: "Source Sans 3", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    list-style: none;         /* hilangkan titik daftar */
+    margin: 0;
+    padding: 0;
+}
+
+.menu li { margin: 0; }
+
+.menu a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+.menu a:hover { background-color: rgba(255, 255, 255, 0.15); }
+
+/* Menu halaman yang sedang dibuka */
+.menu a.active {
+    background-color: #e8a90c;
+    color: #1c1500;
+}
+
+/* ---------- 3. HERO (judul besar di atas) ---------- */
+.hero {
+    background-image: url("images/gedung-kemensos.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    padding: 64px 0 72px 0;
+}
+
+.hero h1 {
+    font-size: 42px;
+    max-width: 20em;
+    margin-bottom: 18px;
+     color: #e8a90c;
+}
+
+.hero-text {
+    max-width: 44em;
+    font-size: 19px;
+    opacity: 0.92;
+    margin: 0;
+}
+
+.hero-small {
+    background-image: url("images/gedung-kemensos.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 0 44px 0;
+}
+.hero-small h1 { font-size: 34px; margin-bottom: 14px; }
+
+.breadcrumb {
+    margin: 0 0 8px 0;
+    color: #e8a90c;
+    font-weight: 600;
+}
+
+/* ---------- 4. ISI HALAMAN SOP ---------- */
+.info-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    border-bottom: 1px solid #d5e0da;
+}
+
+.info-column { flex: 1 1 280px; }
+.info-column h2 { font-size: 18px; margin-bottom: 10px; }
+.info-column ul { font-size: 16px; }
+
+/* ---------- 5. TAHAPAN KEGIATAN ---------- */
+.step {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.step-number {
+    flex-shrink: 0;           /* lingkaran tidak ikut mengecil */
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #14573a;
+    color: #ffffff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-box {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #d5e0da;
+    border-radius: 8px;
+    padding: 16px 18px;
+}
+
+.step-box h3 { font-size: 18px; }
+.step-actor { margin: 4px 0 10px 0; color: #1d4e89; font-weight: 600; font-size: 15px; }
+
+.step-info { display: flex; flex-wrap: wrap; gap: 14px; }
+.info-item { flex: 1 1 180px; }
+.info-item strong { font-size: 14px; color: #55655d; font-weight: 400; }
+.info-item p { margin: 0; font-size: 16px; }
+
+.step-note {
+    margin: 12px 0 0 0;
+    padding-top: 10px;
+    border-top: 1px dashed #d5e0da;
+    font-size: 15px;
+    color: #55655d;
+}
+
+/* Daftar dasar hukum */
+.law-list { max-width: 46em; padding-left: 26px; }
+.law-list li { padding: 8px 0; border-bottom: 1px solid #d5e0da; margin: 0; }
+ul.law-list { list-style: none; padding-left: 0; }
+
+/* ---------- 6. BERANDA ---------- */
+.stages { display: flex; flex-wrap: wrap; gap: 24px; }
+
+.stage {
+    flex: 1 1 200px;
+    border-top: 4px solid #14573a;
+    padding-top: 14px;
+}
+
+.stage-last { border-top-color: #e8a90c; }
+
+.stage-number {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #14573a;
+    color: #ffffff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stage-last .stage-number { background-color: #e8a90c; color: #1c1500; }
+
+.stage h3 { font-size: 19px; margin: 10px 0 6px 0; }
+.stage p { margin: 0 0 8px 0; color: #55655d; font-size: 16px; }
+
+.two-columns { display: flex; flex-wrap: wrap; gap: 36px; }
+.column { flex: 1 1 320px; }
+
+.warning {
+    background-color: #ffffff;
+    border-left: 6px solid #e8a90c;
+    border-radius: 0 8px 8px 0;
+    padding: 20px 24px;
+}
+
+.warning h2 { font-size: 20px; margin-bottom: 8px; }
+.warning p { margin: 0; }
+
+/* ---------- 7. FOOTER ---------- */
+.footer {
+    background-color: #0d3d28;
+    color: #cfe0d6;
+    padding: 28px 0;
+    font-size: 15px;
+}
+
+.footer p { margin: 0 0 8px 0; }
+
+/* ---------- 8. TAMPILAN HP ---------- */
+@media (max-width: 760px) {
+    .hero { padding: 44px 0; }
+    .hero h1 { font-size: 28px; }
+    .hero-small h1 { font-size: 26px; }
+}
+
+/* Flowchart di halaman SOP */
+.flowchart { padding-bottom: 0; }   /* jarak bawah dikurangi, bagian "Tahapan kegiatan" sudah punya jarak atas */
+
+.flowchart-img {
+    display: block;
+    width: 100%;                    /* gambar mengikuti lebar halaman */
+    height: auto;
+    background-color: #ffffff;
+    border: 1px solid #d5e0da;
+    border-radius: 8px;
+}
